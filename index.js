@@ -1,4 +1,4 @@
-let people = [];
+let people = JSON.parse(localStorage.getItem('person')) || [];
 
 function addPerson (){
     let person = {
@@ -9,11 +9,13 @@ function addPerson (){
     
     people.push(person);
     console.log(people)
+    localStorage.setItem('person', JSON.stringify(people));
 }
 
 let outputBox = document.getElementById('table');
 
     function print(){
+        people = JSON.parse(localStorage.getItem('person'))
         outputBox.innerHTML = '';
         people.forEach((data) =>{
             outputBox.innerHTML +=`
