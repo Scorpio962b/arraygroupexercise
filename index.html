@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="my.css">
+    <title>Objects/Properties</title>
 </head>
 <body>
- 
-    
+    <h1 class="heading">Objects And Properties</h1>
 
-    <script src="/index.js"></script>
+    <main>
+        <div class="container">
+            <p class="title">Please input your name</p>
+            <input type="text" name="name" id="name" class="input">
+            <p class="title">Please input your surname</p>
+            <input type="text" name="surnamname" id="surname" class="input">
+            <p class="title">Please input your age</p>
+            <input type="number" name="age" id="age" class="input">
+            <div class="btn-div">
+            <button onclick="addPerson()">Enter</button>
+                <button onclick="undo()">Undo</button>
+            </div>
+        </div>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+            </tr>
+            <br>
+            <tbody id="table">
+    
+            </tbody>
+        </table>
+    </main>
+    
+    <script src="index.js"></script>
 </body>
 </html>
